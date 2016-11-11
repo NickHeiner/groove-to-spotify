@@ -1,0 +1,52 @@
+{
+  "name": "groove-to-spotify",
+  "version": "1.0.0",
+  "description": "A tool to import your Groove Music collection into Spotify",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint *.js lib/**/*.js"
+  },
+  "bin": {
+    "save-groove-collection": "./bin/save-groove-collection.js"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "extends": "eslint:recommended"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickHeiner/groove-to-spotify.git"
+  },
+  "keywords": [
+    "groove",
+    "music",
+    "spotify",
+    "import"
+  ],
+  "author": "Nick Heiner <nth23@cornell.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NickHeiner/groove-to-spotify/issues"
+  },
+  "homepage": "https://github.com/NickHeiner/groove-to-spotify#readme",
+  "devDependencies": {
+    "eslint": "^3.9.1"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.4",
+    "bunyan-format": "^0.2.1",
+    "flat": "^2.0.1",
+    "got": "^6.6.3",
+    "lodash": "^4.16.6",
+    "minimist": "^1.2.0",
+    "nconf": "^0.8.4",
+    "pretty-ms": "^2.1.0",
+    "q-fs": "^0.1.36",
+    "traverse": "^0.6.6"
+  }
+}
