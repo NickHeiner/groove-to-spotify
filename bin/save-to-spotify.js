@@ -9,5 +9,6 @@ asyncWrapper(() => saveToSpotify(
     config('spotify:clientId'),
     config('spotify:clientSecret'),
     config('groove:exportFile'),
-    config('in:searchLimit')
+    config('in:searchLimit'),
+    config('run:dry')
 ));
