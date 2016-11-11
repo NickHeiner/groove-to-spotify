@@ -19,7 +19,10 @@
     "parserOptions": {
       "ecmaVersion": 2017
     },
-    "extends": "eslint:recommended"
+    "extends": "eslint:recommended",
+    "rules": {
+      "max-len": ["error", 120]
+    }
   },
   "repository": {
     "type": "git",
