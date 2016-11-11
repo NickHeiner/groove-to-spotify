@@ -7,12 +7,14 @@
     "test": "eslint *.js lib/**/*.js bin/**/*.js"
   },
   "bin": {
+    "save-to-spotify": "./bin/save-to-spotify.js",
     "get-spotify-token": "./bin/get-spotify-token.js",
     "save-groove-collection": "./bin/save-groove-collection.js"
   },
   "eslintConfig": {
     "env": {
-      "node": true
+      "node": true,
+      "es6": true
     },
     "parserOptions": {
       "ecmaVersion": 2017
@@ -44,6 +46,7 @@
     "flat": "^2.0.1",
     "got": "^6.6.3",
     "koa": "^2.0.0",
+    "load-json-file": "^2.0.0",
     "lodash": "^4.16.6",
     "minimist": "^1.2.0",
     "nconf": "^0.8.4",
