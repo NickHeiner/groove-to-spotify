@@ -5,10 +5,10 @@ const asyncWrapper = require('../lib/async-wrapper'),
     saveToSpotify = require('../lib/save-to-spotify');
 
 asyncWrapper(() => saveToSpotify(
-    config('spotify:accessToken'),
-    config('spotify:clientId'),
-    config('spotify:clientSecret'),
-    config('groove:exportFile'),
+    config.require('spotify:accessToken'),
+    config.require('spotify:clientId'),
+    config.require('spotify:clientSecret'),
+    config.require('groove:exportFile'),
     config('in:searchLimit'),
     config('run:dry')
 ));
