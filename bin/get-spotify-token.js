@@ -4,4 +4,7 @@ const asyncWrapper = require('../lib/async-wrapper'),
     config = require('../lib/config'),
     getSpotifyToken = require('../lib/get-spotify-token');
 
-asyncWrapper(() => getSpotifyToken(config('in:clientId')));
+asyncWrapper(() => getSpotifyToken(
+    config('spotify:clientId'),
+    config('spotify:clientSecret')
+));
